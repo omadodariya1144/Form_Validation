@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <script src="../Form_validation/formvalidation.js"></script>
+    <link rel="stylesheet" href="../Form_validation/formvalidation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="box">
+      <h1>FORM</h1>
+      <form
+        class="Form"
+        name="form"
+        onsubmit="return validateform()"
+        method="post"
+      >
+        <div class="design" id="name">
+          <label for="n"> Name:</label><br />
+          <input type="text" id="n" name="formname" value="" /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="surname">
+          <label for="sur"> Surname:</label><br />
+          <input type="text" id="sur" name="formsurname" value="" /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="email">
+          <label for="e"> E-mail:</label><br />
+          <input type="text" id="e" name="formemail" value="" /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="dob">
+          <label for="birth">Date of birth :</label><br />
+          <input type="date" id="birth" name="formdob" value="" /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="mobile">
+          <label for="m">Mobile number:</label><br />
+          <input
+            type="text"
+            id="m"
+            name="formmobile"
+            value=""
+            maxlength="10"
+          /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="password">
+          <label for="pass">Password:</label><br />
+          <input type="password" id="pass" name="formpassword" value="" /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="design" id="confirmpassword">
+          <label for="cpass">Confirm password :</label><br />
+          <input
+            type="password"
+            id="cpass"
+            name="formconfirmpassword"
+            value=""
+          /><br />
+          <span class="error"></span>
+        </div>
+        <br />
+
+        <div class="formd" id="gender">
+          <div class="text2">Gender</div>
+          <br />
+          <div class="radiobutton">
+            <input
+              type="radio"
+              id="male"
+              name="formselect"
+              value="male"
+            /><label for="male"> Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="formselect"
+              value="Female"
+            /><label for="female">Female</label>
+            <input
+              type="radio"
+              id="other"
+              name="formselect"
+              value="other"
+            /><label for="other">Other</label><br />
+            <span class="error"></span>
+          </div>
+          <br />
+        </div>
+
+        <div class="formd" id="education">
+          <div class="text2">Education</div>
+          <br />
+          <div class="checkboxbutton">
+            <input type="checkbox" id="bca" name="formbox" value="BCA" /><label
+              for="bca"
+              >BCA</label
+            >
+            <input type="checkbox" id="mca" name="formbox" value="MCA" /><label
+              for="mca"
+              >MCA</label
+            >
+            <input type="checkbox" id="othersub" name="formbox" value="Other" />
+            <label for="othersub">Other</label><br />
+            <span class="error"></span>
+          </div>
+          <br />
+        </div>
+
+        <div class="sub">
+          <input class="but" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
